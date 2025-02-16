@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>aidenhenz.com</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <meta name="author" content="aiden henz">
+    <meta name="keywords" content="aidenhenz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta content="aidenhenz.com" property="og:title" />
+    <meta content="aiden's digi-zone 4 netizens" property="og:description" />
+    <meta content="https://aidenhenz.com" property="og:url" />
+    <meta content="assets/favicon.ico" property="og:image" />
+    <meta content="#93ff00" data-react-helmet="true" name="theme-color" />
+    <style>
+        @font-face {
+            font-family: 'VCR OSD Mono';
+            src: url('fonts/VCR_OSD_MONO_1.001.ttf') format('truetype');
+        }
+        
+        body {
+            text-align: center;
+            color: white;
+            font-family: 'VCR OSD Mono', monospace;
+        }
+        .centered-container {
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            border: 2px solid #ec77ae;
+            padding: 10px;
+        }
+        p, h1, h2, div {
+            text-align: center;
+            color: white;
+            font-family: 'VCR OSD Mono', monospace;
+        }
+        #stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        table {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: 2px solid #ec77ae;
+            font-family: 'VCR OSD Mono', monospace;
+        }
+        .content-section {
+            border: 0px solid #ec77ae;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        #pageContent {
+            border: 2px solid #ec77ae;
+            padding: 15px;
+        }
+        #topbar {
+            border: 2px solid #ec77ae;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #navigation {
+            border: 2px solid #ec77ae;
+            padding: 10px;
+        }
+        #creditAndWebring {
+            border: 2px solid #ec77ae;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body id="body" onload="onPageLoaded()" class="chart">
+    <video autoplay muted loop src="assets/stars.mp4" id="stars" oncanplay="this.play()"></video>
+    <table class="centered-container">
+        <tr>
+            <th>
+                <div class="p1" id="topbar">
+                    <h1 style="margin-top: 0; font-size: 42px;"><b id="rainbow">aidenhenz.com</b></h1>
+                    <script src="js/rainbow.js"></script>
+
+                    <h2><b style="color:slateblue;"><a href="https://www.youtube.com/watch?v=Bfx6J3-dX8E" style="text-decoration: none; color: inherit;">【=◈︿◈=】</a></b></h2>
+                    <p>keep being pawsome!</p>
+                    <table style="margin: 0 auto;">
+                            <tr>
+                                <th id="smiley"></th>
+                                <th style="width:100%;height:20px;">
+                                    <br>
+                                    <br>
+                                    <h3 style="margin: 0; color: slateblue;">a song i've been listening to:</h3>
+                                    <audio controls loop id="audioA" style="height:100%;width:100%;" onloadeddata="this.volume=0.1">
+                                        <source src="assets/Favourite - Porter Robinson.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                    <style>
+                                        #audioA::-webkit-media-controls-panel {
+                                            background-color: #ec77ad59;
+                                        }
+                                        #audioA::-webkit-media-controls-timeline,
+                                        #audioA::-webkit-media-controls-current-time-display,
+                                        #audioA::-webkit-media-controls-time-remaining-display,
+                                        #audioA::-webkit-media-controls-mute-button,
+                                        #audioA::-webkit-media-controls-play-button,
+                                        #audioA::-webkit-media-controls-volume-slider {
+                                            display: block;
+                                        }
+                                        #audioA::-webkit-media-controls-enclosure > * {
+                                            display: none;
+                                        }
+                                    </style>
+                            </tr>
+                            <tr>
+                                
+                                <th style="height:10px;"></th>
+                                
+                                <th class="smallMargins" style="color:slateblue;font-size:24px;" colspan="2"><br>♩♪♫ favourite - porter robinson, d.c.'s fontaine ♫♪♩</th>
+                                
+                            </tr>
+                    </table>
+                </div>
+            </th>
+            <th>
+                <img src="assets/nyancat.gif" title="nyanyan" height="150px" alt="nyancat says: click to go home!" id="nyan" data-bs-toggle="tooltip">
+            </th>
+        </tr>
+        <tr>
+            <th width="800px">
+                <div class="scrollable-content" id="pageContent">
+                    <div class="content-section">
+                        <h2 style="color: slateblue;margin:0;" id="dance">about:</h2>
+                        <div id="inAbout">
+                            <p class="smallMargins" id="intro">
+                                <div id="introText" style="margin: 0;">
+                                    > welcome to aidenhenz.com
+                                    <br>> to return home on another page, click nyan cat<br>
+                                    > press ctrl+f5 to reroll your slots result!
+                                    <br><br>
+                                </div>
+                                > contribute to the code: <b><a href="https://github.com/astridztar/insectchristmas">[github]</a></b>
+                                    <br>
+                                > business/collaboration: <b><a href="mailto:ashtag.biz@gmail.com">[email]</a></b><br>
+                                > donate to the website: <b><a href="https://streamelements.com/hashtagminustheh/tip">[donate]</a></b>
+                            </p>
+                        </div>
+                    </div>
+
+                    <hr style="color:rgb(192, 199, 185);">
+
+                    <div class="content-section">
+                        <h2 id="slots" style="margin: 0; color: slateblue"><b>your slots pull:</b></h2>
+                        <div id="slotsResult"></div>
+                    </div>
+
+                    <hr style="color:chartreuse;">
+                    
+                    <div class="content-section">
+                        <h2 id="whatimupto" style="margin: 0; color: slateblue"><b>what im up 2:</b></h2>
+                        <b style="color:yellow;">01/10/2025</b> -> trying to 100% cyberpunk2077.... <b><a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/">[game link]</a></b><br>
+                        <b style="color:yellow;">03/14/2025</b> -> coding my site! <b><a href="https://aidenhenz.com">[literally this page]</a></b><br>
+                    </div>
+                    <hr style="color:chartreuse;">
+                    
+                    <div class="content-section">
+                        <h2 id="news" style="margin: 0; color: slateblue"><b>news & the future:</b></h2>
+                        <b style="color:yellow;">04/23/2025</b> -> jane remover live @ minneapolis <b><a href="https://janeremover.bandcamp.com">[bandcamp]</a></b><br>
+                        <b style="color:yellow;">05/22/2025</b> -> i graduate high school!</a></b><br>
+                        <b style="color:yellow;">06/03/2025</b> -> summerfest 2025 @ milwaukee <b><a href="https://www.summerfest.com">[site]</a></b><br>
+
+                    </div>
+                    <hr style="color:chartreuse;">
+                    
+                    <div class="content-section">
+                        <h2 id="diagnostics" style="margin: 0; color: slateblue"><b>diagnostics:</b></h2>
+                        <p id="detection" class="smallMargins2" style="margin:0;">detected: </p>
+                        <p id="detection2" class="smallMargins2" style="margin:0;">detected: </p>
+                    </div>
+                    <hr style="color:chartreuse;">
+                    
+                    <div class="smallMargins" id="creditAndWebring">
+                        <h2 style="color: slateblue;margin:0;" id="dance">webring:</h2>
+                        <a href="https://heksevals.neocities.org/"><img src="images/webring/heksevals.gif"></a>
+                        <a href="http://www.iikorni.space/"><img src="images/webring/iikorni.png" style="margin: 0;"></a>
+                        <a href="https://xylofool.neocities.org/"><img src="images/webring/xylofool.png"></a>
+                        <br>
+                        
+                        <a href="https://hilbo.zone"><img src="https://hilbo.zone/filez/img/88x31/hilbobutton.gif" style="margin: 0;"></a>
+                        
+                        <a href="https://milobit.net/"><img src="images/webring/milobit.gif"></a>
+                        
+                        <a href="https://pink-luva.neocities.org/"><img src="images/webring/ae.jpg"></a>
+                        
+                        <a href="https://pixelgallery.net/"><img src="images/webring/pixelgallery.gif"></a>
+                        
+                        <a href="https://song-rank.com"><img src="images/webring/song-rank.png" style="margin: 0;"></a>
+                        
+                        <br>
+                        <b><a href="https://en.wikipedia.org/wiki/Webring">[what is a webring?]</a></b><br>
+                        want to join the webring? email <b style="color:yellow;">aztrosist.business@gmail.com</b>
+                        
+                        <img src="images/halloweenBar.gif" id="halloweenBar" style="margin: 0;">
+                        
+                    </div>
+                </div>
+            </th>
+            <th style="width: 150px; height:100%">
+                <div id="navigation"></div>
+            </th>
+        </tr>
+    </table>
+    </div>
+    <script src="/js/index.js"></script>
+    <script src="/js/detection.js"></script>
+    <script src="/js/izzy.js"></script>
+    <script src="/js/dampenAudio.js"></script>
+    <script src="/js/rainbow.js"></script>
+    <script src="/js/smiley.js"></script>
+    <script src="/js/nav.js"></script>
+    <script src="/js/slots.js"></script>
+    <script src="/js/butterfly.js"></script>
+</body>
+</html>
